@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+
+}
+
+.container {
+    margin: 0 auto;
+    background-color: rgb(76, 133, 133);
+    padding: 10px;
+    box-shadow: 0 0 20px 10px;
+    transition: 0.5s;
+}
+
+.myinput {
+    border-radius: 0px;
+}
+
+.checkbtn {
+    border-radius: 0px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.congrat {
+    color: rgb(162, 241, 241);
+    font-weight: 800;
+
+}
+
+.attempts {
+    color: rgb(76, 133, 133);
+    transition: 1s;
+    padding-left: 30px;
+    box-shadow: black;
+}
+
+.texts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.title {
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.forms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    animation: swing 3s ease-in-out infinite alternate;
+    transform-origin: 50% 80%;
+}
+
+.attempts:hover {
+    color: rgb(98, 170, 170);
+    transition: 1s;
+}
+
+.container:hover {
+    background-color: rgb(88, 151, 151);
+}
+
+.checkbtn:hover {
+    background-color: rgb(189, 189, 189);
+    border-color: aliceblue;
+    color: rgb(54, 54, 54);
+    transition: 0.5s;
+}
+
+.myinput:hover {
+    background-color: rgb(189, 189, 189);
+    border-color: aliceblue;
+    color: rgb(54, 54, 54);
+    transition: 0.5s;
+}
+
+.title:hover {
+    color: rgb(56, 56, 56);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
