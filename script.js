@@ -26,9 +26,17 @@ mybtn.addEventListener('click', () => {
     if (randnum == myinput.value) {
         congrat.textContent = 'YOU ARE RIGHT'
         attempts.textContent = `${i} попытки`;
-    } else {
+    } else if(randnum < myinput.value){
         congrat.textContent = 'TRY AGAIN'
         i++
         console.log(i)
+
+        document.querySelector('#advice').textContent = 'Загаданное число больше '
+    }
+     else if(randnum > myinput.value){
+        congrat.textContent = 'TRY AGAIN'
+        i++
+        console.log(i)
+        document.querySelector('#advice').textContent = 'Загаданное число меньше'
     }
 })

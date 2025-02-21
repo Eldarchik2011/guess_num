@@ -16,7 +16,8 @@ html {
 .wrapper {
     min-height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: darkslategray;
 
@@ -117,4 +118,21 @@ html {
     100% {
         transform: rotate(-5deg);
     }
+}
+
+
+
+
+#advice {
+    
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.797);
+    margin: 0 auto;
+    animation: swing 3s ease-in-out infinite alternate;
+    transform-origin: 50% 80%;
+    margin-top: 20px;
+    font-size: 18px;
 }
